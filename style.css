@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  width: 50px;
+}
+
+.header-buttons button {
+  background: none;
+  border: none;
+  margin: 15px;
+  font-size: 13px;
+  color: rgb(99, 98, 98);
+  cursor: pointer;
+}
+
+.header-buttons button:hover {
+  color: black;
+}
+
+.header-buttons button:active {
+  color: rgb(132, 135, 135);
+}
+
+.sections {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.first-section {
+  margin-left: 80px;
+}
+
+.desktop {
+  width: 600px;
+}
+
+.infor {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-one {
+  font-size: 3rem;
+  width: 280px;
+}
+
+.more-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 15px;
+  width: 270px;
+  font-size: 14px;
+  color: rgb(99, 98, 98);
+  margin-left: 48px;
+  line-height: 20px;
+}
+
+.read-button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.read-button:hover {
+  background-color: red;
+}
+
+.read-button:active {
+  background-color: hsl(5, 85%, 63%);
+}
+
+.second-section {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 20px;
+  width: 280px;
+  height: 420px;
+}
+
+.new-word {
+  font-size: 30px;
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 20px;
+}
+
+.thing {
+  padding-bottom: 29px;
+  border-bottom: 1px solid rgb(99, 98, 98);
+}
+
+.title {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.desc {
+  font-size: 12px;
+  color: rgb(99, 98, 98);
+}
+
+.second .title {
+  padding-top: 29px;
+}
+
+.third .title {
+  padding-top: 29px;
+}
+
+.third {
+  border-bottom: none;
+}
+
+.second-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.image {
+  width: 70px;
+}
+
+.detail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.detail-number {
+  color: hsl(5, 85%, 63%);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.detail-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.detail-desc {
+  font-size: 12px;
+  width: 180px;
+}
+
+.first-infor,
+.second-infor,
+.third-infor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-icon {
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.close-icon {
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 0 16px 32px;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .header-buttons {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .page-img {
+    width: 100%;
+    height: 260px;
+    margin: 0 auto;
+    background-image: url(./assets/images/image-web-3-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .page-img img {
+    display: none;
+  }
+
+  .sections {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .first-section {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .infor {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .title-one {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .more-infor {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .read-button {
+    margin-top: 16px;
+    padding: 10px 20px;
+  }
+
+  .second-section {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    padding: 20px;
+  }
+
+  .second-details {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .detail-desc {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+.show-menu {
+  display: flex !important;
+}
+
+.hide-menu {
+  display: none !important;
+}
